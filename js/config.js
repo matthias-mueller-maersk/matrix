@@ -75,7 +75,7 @@ const defaults = {
 	useCamera: false,
 	backgroundColor: hsl(0, 0, 0), // The color "behind" the glyphs
 	isolateCursor: true, // Whether the "cursor"— the brightest glyph at the bottom of a raindrop— has its own color
-	cursorColor: hsl(0.242, 1, 0.73), // The color of the cursor
+	cursorColor: rgb(0.70703125, 0.875, 0.95703125), // The color of the cursor
 	cursorIntensity: 2, // The intensity of the cursor
 	isolateGlint: false, // Whether the "glint"— highlights on certain symbols in the font— should appear
 	glintColor: hsl(0, 0, 1), // The color of the glint
@@ -113,10 +113,9 @@ const defaults = {
 	density: 1, // In volumetric mode, the number of actual columns compared to the grid
 	palette: [
 		// The color palette that glyph brightness is color mapped to
-		{ color: hsl(0.3, 0.9, 0.0), at: 0.0 },
-		{ color: hsl(0.3, 0.9, 0.2), at: 0.2 },
-		{ color: hsl(0.3, 0.9, 0.7), at: 0.7 },
-		{ color: hsl(0.3, 0.9, 0.8), at: 0.8 },
+		{ color: rgb(0, 0, 0), at: 0.0 },
+		{ color: rgb(0.125, 0.34, 0.41), at: 0.5 },
+		{ color: rgb(0.2578125, 0.6875, 0.83203125), at: 1.0 },
 	],
 	raindropLength: 0.75, // Adjusts the frequency of raindrops (and their length) in a column
 	slant: 0, // The angle at which rain falls; the orientation of the glyph grid
